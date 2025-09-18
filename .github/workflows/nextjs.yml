@@ -75,11 +75,11 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
-        working-directory: portfolio/my_app
+        working-directory: my_app
         run: npm run build
 
       - name: Export static site
-        working-directory: portfolio/my_app
+        working-directory: my_app
         run: npm run export
 
       - name: Upload artifact

@@ -20,7 +20,7 @@ const ProjectRow: React.FC<ProjectRowProps> = ({ project }) => (
 <div
   className={`
     flex flex-col md:flex-row justify-center items-center
-    gap-20 mb-20 mx-auto min-h-[900px] p-8
+    gap-20 mb-20 mx-auto min-h-[700px] p-8
     ${project.id % 2 !== 0 ? " bg-white/30" : ""}
   `}
 >

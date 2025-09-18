@@ -78,38 +78,35 @@ const projects = [
 
 export default function Home() {
   return (
-    <div >
-           <AnimatedBackground animationName="gradientWave" theme="myCustomTheme" />
-           <h1 className="pt-20 text-center font-normal text-[8rem] font-sans">
-  Iris&apos; {' '}
-  <span className="italic" >
-    <Typewriter
-      words={['Projects']}
-      cursor
-      cursorStyle='_'
-      typeSpeed={100}
-    />
-  </span>
-</h1>
-           <div className="min-h-[300px] flex items-center justify-center bg-cover bg-center relative">
-  
-  <div className="bg-white/20 backdrop-blur-lg rounded-xl p-10 my-30 w-2/4 text-center shadow-lg border border-white/30">
-    <p className="text-4xl text-white mb-6">
-I&apos;m currently in my third studying  computer engineering  and physics at UNSW. 
- </p>
-     <p className="text-4xl text-white mb-6">
-My journey into web development began through DevSoc&apos;s training program, where I discovered a passion for learning and working in a team.. Since then, I&apos;ve expanded my skills through solo projects and leading development teams within DevSoc&apos;s training program and as Enactus&apos; IT director.
- </p>
-     <p className="text-4xl text-white">
-On this page, you&apos;ll find a collection of projects that highlight my exploration of diverse tech stacks and innovative ideas   
- </p>
-  </div>
-</div>
-
-
-      {projects.map((project) => (
+    <div > 
+      <AnimatedBackground animationName="gradientWave" theme="myCustomTheme" />
+        <h1 className="pt-20 text-center font-normal text-[8rem] font-sans">
+          Iris&apos; {' '}
+          <span className="italic" >
+            <Typewriter
+              words={['Projects']}
+              cursor
+              cursorStyle='_'
+              typeSpeed={100}
+            />
+          </span>
+        </h1>
+          <div className="min-h-[300px] flex items-center justify-center bg-cover bg-center relative">
+            <div className="bg-white/20 backdrop-blur-lg rounded-xl p-10 my-30 w-2/4 text-center shadow-lg border border-white/30">
+              <p className="text-4xl text-white mb-6">
+                I&apos;m currently in my third studying  computer engineering  and physics at UNSW. 
+              </p>
+              <p className="text-4xl text-white mb-6">
+                My journey into web development began through DevSoc&apos;s training program, where I discovered a passion for learning and working in a team.. Since then, I&apos;ve expanded my skills through solo projects and leading development teams within DevSoc&apos;s training program and as Enactus&apos; IT director.
+              </p>
+              <p className="text-4xl text-white">
+                On this page, you&apos;ll find a collection of projects that highlight my exploration of diverse tech stacks and innovative ideas   
+              </p>
+            </div>
+          </div>
+        {projects.map((project) => (
         <ProjectRow key={project.id} project={project} />
-      ))}
-    </div>
+        ))}
+      </div>
   );
 }

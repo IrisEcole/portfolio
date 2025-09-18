@@ -91,7 +91,7 @@ export default function Home() {
           </span>
         </h1>
           <div className="min-h-[300px] flex items-center justify-center bg-cover bg-center relative">
-            <div className="bg-white/20 backdrop-blur-lg rounded-xl p-10 my-30 w-full sm:w-3/4 md:w-2/4 mx-auto text-center shadow-lg border border-white/30">
+            <div className="bg-white/20 backdrop-blur-lg rounded-xl p-10 my-30 w-full sm:w-full md:w-2/4 mx-auto text-center shadow-lg border border-white/30">
               <p className="text-xl sm:text-lg md:text-3xl lg:text-4xl text-white mb-6">
                 I&apos;m currently in my third year studying Computer Engineering and Physics at UNSW. 
               </p>

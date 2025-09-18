@@ -20,7 +20,7 @@ const ProjectRow: React.FC<ProjectRowProps> = ({ project }) => (
 <div
   className={`
     flex flex-col md:flex-row justify-center items-center
-    gap-20 mb-20 mx-auto  p-8 py-50
+    gap-20 mb-20 mx-auto  p-8 py-20
     ${project.id % 2 !== 0 ? " bg-white/30" : ""}
   `}
 >
@@ -42,13 +42,13 @@ const ProjectRow: React.FC<ProjectRowProps> = ({ project }) => (
         href={project.demo}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-[100px] sm:text-lg md:text-6xl font-bold mb-2 inline-block underline hover:text-white/50"
+        className="text-[100px] sm:text-base md:text-7xl font-bold mb-2 inline-block underline hover:text-white/50"
         >
         {project.title}
         </a>
 
       ) : (
-        <h3 className="text-[100px] sm:text-lg md:text-6xl font-bold mb-2">{project.title}</h3>
+        <h3 className=" sm:text-base md:text-7xl font-bold mb-2">{project.title}</h3>
       )}
 
       <p className="text-gray-200 text-4xl mb-4 whitespace-pre-line">{project.description}</p>

@@ -39,15 +39,16 @@ const ProjectRow: React.FC<ProjectRowProps> = ({ project }) => (
     <div className="md:w-1/2">
       {project.demo ? (
         <a
-          href={project.demo}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[100px] font-bold mb-2 inline-block underline hover:text-white/50"
+        href={project.demo}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-[100px] sm:text-xl md:text-3xl font-bold mb-2 inline-block underline hover:text-white/50"
         >
-          {project.title}
+        {project.title}
         </a>
+
       ) : (
-        <h3 className="text-[100px] font-bold mb-2">{project.title}</h3>
+        <h3 className="text-[100px] sm:text-xl md:text-3xl font-bold mb-2">{project.title}</h3>
       )}
 
       <p className="text-gray-200 text-4xl mb-4 whitespace-pre-line">{project.description}</p>
@@ -72,13 +73,13 @@ const ProjectRow: React.FC<ProjectRowProps> = ({ project }) => (
             className="text-gray-600 hover:text-gray-900 flex items-center gap-1"
             aria-label="GitHub Repository"
           >
-            <svg
-              className="w-20 h-20"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+                <svg
+                className="w-10 h-10 sm:w-10 sm:h-10 md:w-12 md:h-12"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                >
               <path
                 fillRule="evenodd"
                 clipRule="evenodd"

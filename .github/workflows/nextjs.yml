@@ -82,6 +82,12 @@ jobs:
       - name: Build with Next.js
         working-directory: my-app
         run: npm run build
+      - name: Check for output folder
+        run: |
+          if [ ! -d "my-app/out" ]; then
+            echo "❌ out folder not found!"
+            exit 1
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

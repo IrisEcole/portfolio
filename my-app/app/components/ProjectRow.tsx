@@ -42,13 +42,13 @@ const ProjectRow: React.FC<ProjectRowProps> = ({ project }) => (
         href={project.demo}
         target="_blank"
         rel="noopener noreferrer"
-        className=" sm:text-2xl md:text-7xl font-bold mb-2 inline-block underline hover:text-white/50"
+        className=" sm:text-6xl md:text-7xl font-bold mb-2 inline-block underline hover:text-white/50"
         >
         {project.title}
         </a>
 
       ) : (
-        <h3 className=" sm:text-2xl md:text-7xl font-bold mb-2">{project.title}</h3>
+        <h3 className=" sm:text-6xl md:text-7xl font-bold mb-2">{project.title}</h3>
       )}
 
       <p className="text-gray-200 text-4xl mb-4 whitespace-pre-line">{project.description}</p>
@@ -57,7 +57,7 @@ const ProjectRow: React.FC<ProjectRowProps> = ({ project }) => (
         {project.tech.map((tech) => (
           <span
             key={tech}
-            className="bg-blue-100 text-blue-800 px-3 py-1 my-6 rounded-full text-2xl font-medium"
+            className="bg-blue-100 text-blue-800 px-3 py-1 my-6 rounded-full sm:text-lg md:text-2xl font-medium"
           >
             {tech}
           </span>

@@ -1,4 +1,3 @@
-// components/ProjectRow.tsx
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 
@@ -25,7 +24,6 @@ const ProjectRow: React.FC<ProjectRowProps> = ({ project }) => (
     ${project.id % 2 !== 0 ? " bg-white/30" : ""}
   `}
 >
-    {/* Left: Image */}
     <div className="md:w-1/2">
       <div className="relative w-full aspect-video rounded-lg shadow-lg">
         <Image
@@ -33,11 +31,11 @@ const ProjectRow: React.FC<ProjectRowProps> = ({ project }) => (
           alt={project.title}
           fill
           className="object-cover rounded-4xl"
+          unoptimized
         />
       </div>
     </div>
 
-    {/* Right: Text info */}
     <div className="md:w-1/2">
       {project.demo ? (
         <a
@@ -74,7 +72,6 @@ const ProjectRow: React.FC<ProjectRowProps> = ({ project }) => (
             className="text-gray-600 hover:text-gray-900 flex items-center gap-1"
             aria-label="GitHub Repository"
           >
-            {/* GitHub SVG icon */}
             <svg
               className="w-20 h-20"
               fill="currentColor"

@@ -2,17 +2,16 @@
 "use client";
 
 import { AnimatedBackground } from 'animated-backgrounds';
-import ProjectRow from './components/ProjectRow'; // adjust relative path
+import ProjectRow from './components/ProjectRow'; 
 import { Typewriter } from 'react-simple-typewriter'
 import { themeManager } from 'animated-backgrounds';
-
+import Footer from './components/footer';
 //Project Images
 import EnactusImage from '../public/images/Enactus_events_page.png';
 import ElectusImage from '../public/images/Electus_voting.png';
 import FruitFocusImage from '../public/images/FruitFocus_state_page.png';
 import InterWeatherImage from '../public/images/InterWeather_Paris.png';
 
-// Define a custom theme BEFORE rendering (so it can be applied)
 themeManager.createCustomTheme('myCustomTheme', {
   name: 'myCustomTheme',
   colorScheme: {
@@ -107,6 +106,7 @@ export default function Home() {
         {projects.map((project) => (
         <ProjectRow key={project.id} project={project} />
         ))}
+        <Footer></Footer>
       </div>
   );
 }

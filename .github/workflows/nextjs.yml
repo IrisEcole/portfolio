@@ -74,6 +74,11 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Install dependencies
+        working-directory: my-app
+        run: npm ci
+
+
       - name: Build with Next.js
         working-directory: my-app
         run: npm run build

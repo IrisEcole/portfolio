@@ -21,6 +21,7 @@ const ProjectRow: React.FC<ProjectRowProps> = ({ project }) => (
   className={`
     flex flex-col md:flex-row justify-center items-center
     gap-20 mb-20 mx-auto min-h-[700px] p-8
+    max-w-7xl
     ${project.id % 2 !== 0 ? " bg-white/30" : ""}
   `}
 >

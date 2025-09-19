@@ -36,7 +36,7 @@ const projects = [
   {
     id: 1,
     title: "Enactus",
-    description: "Role: IT Director \nLed a small team responsible for the development and maintenance of the official UNSW Enactus society website. Oversaw project planning, delegated tasks, and ensured smooth continuous deployment of the site.  to support society activities and initiatives.",
+    description: "Role: IT Director \nLed a small team responsible for the development and maintenance of the official UNSW Enactus society website. Oversaw project planning, delegated tasks, and ensured smooth continuous deployment of the site to support society activities and initiatives.",
     tech: ["React", "Vite", "Tailwind"],
     image: EnactusImage,
     demo: "https://enactusunsw.org/", 
